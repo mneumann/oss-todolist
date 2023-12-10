@@ -14,7 +14,7 @@
 - [ ] Make evdev the default?
 
 - [ ] Bring in changes to `mixer` from FreeBSD
-  [link][https://wiki.freebsd.org/SummerOfCode2021Projects/SoundMixerImprovements]
+  [link](https://wiki.freebsd.org/SummerOfCode2021Projects/SoundMixerImprovements)
 
 ## Userland
 
