@@ -3,8 +3,7 @@
 ## Kernel
 
 - [x] Deprecate / Remove `bus_dma` filter and filterarg (like FreeBSD):
-
-    https://leaf.dragonflybsd.org/~mneumann/0001-busdma-Remove-filter-functionality.patch
+  [See commit](https://gitweb.dragonflybsd.org/dragonfly.git/commit/030b0c8c4cf27c560ccec70410c8e21934ae677d)
 
 - [ ] Bring in `sys/dev/hid` from FreeBSD
 
