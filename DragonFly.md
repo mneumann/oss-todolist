@@ -5,6 +5,10 @@
 - [x] Deprecate / Remove `bus_dma` filter and filterarg (like FreeBSD):
   [See commit](https://gitweb.dragonflybsd.org/dragonfly.git/commit/030b0c8c4cf27c560ccec70410c8e21934ae677d)
 
+- [ ] psm: Fix spurious mouse jumps similar to what is reported
+  [here][bug-psm-spurious] and this [commit][active-aux-port-mux] related to
+  active AUX port multiplexing.
+
 - [ ] Port uvideo from NetBSD or OpenBSD (uvc "webcam")
 
 - [ ] Bring in `sys/dev/hid` from FreeBSD
@@ -31,3 +35,6 @@
 - [x] Fix man `hammer2(8)` saying that the default of `sysctl
   vfs.hammer2.cluster_writes` is 4, but it is `0`. Or is the default wrong?
 
+
+[bug-psm-spurious]: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=231058
+[active-aux-port-mux]: https://svnweb.freebsd.org/base?view=revision&revision=340913
