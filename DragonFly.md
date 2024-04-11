@@ -5,9 +5,16 @@
 - [x] Deprecate / Remove `bus_dma` filter and filterarg (like FreeBSD):
   [See commit](https://gitweb.dragonflybsd.org/dragonfly.git/commit/030b0c8c4cf27c560ccec70410c8e21934ae677d)
 
-- [ ] psm: Fix spurious mouse jumps similar to what is reported
+- [x] psm: Fix spurious mouse jumps similar to what is reported
   [here][bug-psm-spurious] and this [commit][active-aux-port-mux] related to
   active AUX port multiplexing.
+
+  https://lists.dragonflybsd.org/pipermail/kernel/2024-April/336558.html
+
+  Waiting for feedback/testing before merging.
+
+- [x] Figure out how to make the touchpad work on Panasonic Letsnote CF-SV
+      Works with above patches.
 
 - [ ] Port uvideo from NetBSD or OpenBSD (uvc "webcam")
 
@@ -24,9 +31,14 @@
 
 - [ ] Figure out why OpenGL is broken on i915 (UHD Graphics 620)
 
-- [ ] Figure out how to make the touchpad work on Panasonic Letsnote CF-SV
+- [ ] Bring in some ELF-loader related changes from FreeBSD into
+      our bootloader and kernel. Loading i915.ko currently fails with
+      "readin failed".
 
 ## Userland
+
+- [ ] Fix dport editors/helix:
+      https://github.com/DragonFlyBSD/DeltaPorts/blob/master/ports/editors/helix/Makefile.DragonFly
 
 ## Documentation
 
