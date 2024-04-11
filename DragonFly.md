@@ -40,6 +40,8 @@
 - [ ] Fix dport editors/helix:
       https://github.com/DragonFlyBSD/DeltaPorts/blob/master/ports/editors/helix/Makefile.DragonFly
 
+- [ ] Bring up-to-date version of Rust into dports
+
 ## Documentation
 
 - [ ] Make webman resposive (similar to man.openbsd.org)
