@@ -24,7 +24,7 @@
 
 - [ ] Port `iichid.c` from FreeBSD (depends on `sys/dev/hid`)
 
-- [ ] Make evdev the default?
+- [x] Make evdev the default?
 
 - [ ] Bring in changes to `mixer` from FreeBSD
   [link](https://wiki.freebsd.org/SummerOfCode2021Projects/SoundMixerImprovements)
@@ -35,6 +35,15 @@
       our bootloader and kernel. Loading i915.ko currently fails with
       "readin failed".
 
+- [ ] setting `boot_verbose="NO"` in /boot/loader.conf
+      enables verbose booting as `howto_names` only checks if a value
+      is set or not.
+
+- [ ] Bring in some changes for `acpi_panasonic`: https://patchwork.kernel.org/project/linux-acpi/patch/20090114060117.GM4791@prithivi.gnumonks.org/
+
+- [ ] i915 - loading DMC firmware fails. The modules are registered under different
+      names in port devfw-i915 than refered to in the kernel driver.
+
 ## Userland
 
 - [ ] Fix dport editors/helix:
@@ -42,9 +51,13 @@
 
 - [ ] Bring up-to-date version of Rust into dports
 
+- [ ] adb from android-tools does not work
+
 ## Documentation
 
 - [ ] Make webman resposive (similar to man.openbsd.org)
+
+- List all past releases on homepage.
 
 - [x] Fix man `hammer2(8)` saying that the default of `sysctl
   vfs.hammer2.cluster_writes` is 4, but it is `0`. Or is the default wrong?
